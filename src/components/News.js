@@ -10,8 +10,7 @@ const News = ({category}) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=b2093b26df3a4fdf899fc895bfd92aa8`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`;
     fetch(url)
       .then(response => {
         if (!response.ok) throw new Error("Failed to fetch news");
