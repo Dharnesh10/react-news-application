@@ -15,7 +15,7 @@ function NewsList({ title = '', author = 'Unknown', description = '', content = 
         style={{ height: '180px', objectFit: 'cover' }}
       />
       <Card.Body>
-        {/* Title with toggle */}
+        {/* Title with toggle */} 
         <Card.Title className="fw-bold">
           {showFullTitle ? title : title.slice(0, 50)}
           {title.length > 50 && (
