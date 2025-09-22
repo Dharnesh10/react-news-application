@@ -29,7 +29,7 @@ const News = ({category}) => {
   return (
     <div className="container py-4">
       <h2 className="text-center mb-4 p-3">
-        The Great <Badge>American</Badge> News
+        The Great <Badge>Dharnesh</Badge> News
       </h2>
 
       {loading && (
